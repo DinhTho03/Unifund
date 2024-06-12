@@ -123,7 +123,7 @@ body {
 
 .features {
   display: flex;
-  width: 60%;
+  width: 65%;
   padding: 50px;
   flex-direction: row;
   justify-content: center;
@@ -136,7 +136,7 @@ body {
   );
   box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
   backdrop-filter: blur(16px);
-  margin: 580px 0px 0px 300px;
+  margin: 580px 0px 0px 250px;
 }
 
 .features .feature {
@@ -386,7 +386,7 @@ body {
 
 .funder-project h2 {
   max-width: 40%;
-  padding: 0 0 0 31%;
+  padding: 0 0 0 29%;
   text-align: center;
   font-size: 48px;
   font-weight: 700;
@@ -399,7 +399,6 @@ body {
   margin-top: -20px;
   margin-bottom: 60px;
 }
-
 
 .funder-project .projects {
   width: 100%;
@@ -415,7 +414,6 @@ body {
 
 .featured-funders h2 {
   font-size: 48px;
-
   text-align: left;
   font-style: normal;
   font-weight: 700;
@@ -460,9 +458,9 @@ body {
 }
 
 .featured-funders .frame .funders .funder hr {
-  background-color: #444444; 
-  height: 0.2px; 
-  margin: 10px 0; 
+  background-color: #444444;
+  height: 0.2px;
+  margin: 10px 0;
 }
 
 .featured-funders .frame .funders .funder .info {
@@ -487,7 +485,6 @@ body {
   font-weight: 400;
   line-height: 20px;
 }
-
 
 .featured-funders .frame .funders .funder img {
   border-radius: 28px 28px 0px 0px;
@@ -568,6 +565,89 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.unifund-intro {
+  width: 100%;
+  display: flex;
+  padding-left: 120px;
+  text-align: left;
+}
+
+.unifund-intro h2 {
+  width: 40%;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  text-align: left;
+}
+.unifund-intro p {
+  width: 40%;
+  color: #777e90;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.unifund-intro .detail-info {
+  width: 700px;
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+
+.unifund-intro .detail-info .number2 {
+  background: #92a5ef;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  display: flex;
+  padding: 2px 4px;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.unifund-intro .detail-info .number1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background: #58c27d;
+  display: flex;
+  padding: 2px 4px;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.unifund-intro .input-email {
+  width: 300px;
+  border-radius: 90px;
+  border: 2px solid #353945;
+  display: flex;
+  height: 24px;
+  padding: 8px 8px 8px 16px;
+  align-items: center;
+  gap: 18px;
+  align-self: stretch;
+}
+
+.unifund-intro .input-email input{
+  border: 0;
+  background-color: #141416;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .footer {
