@@ -18,14 +18,17 @@
     <header class="header">
         <div class="left">
             <img src="logo.png" alt="UniFund Logo" class="logo">
-            <nav>
+            <nav class="nav-links">
                 <a href="#about-us">About Us</a>
                 <a href="#faqs">FAQs</a>
                 <a href="#creators">Creators</a>
             </nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                ☰
+              </div>    
         </div>
         <div class="right">
-            <button class="funders-btn" >Funders</button>
+            <button class="funders-btn">Funders</button>
         </div>
     </header>
 
@@ -93,6 +96,10 @@
         <h2>Dự án kêu gọi thành công trên nền tảng UniFund</h2>
         <h3>Cập nhật thông tin về dự án</h3>
         <div class="project">
+            <div class="image">
+                <div class="background-blur"></div>
+                <img src="Rectangle.png" alt="">
+            </div>
             <div class="main-project">
                 <div class="detail-project">
                     <h7 class="number1">01</h7>
@@ -114,10 +121,6 @@
                         trồng đa dạng loài thực vật để phục vụ nhu cầu trang trí tại nhà ở hoặc không gian sống nhưng
                         vẫn đảm bảo tính mỹ thuật của kiến trúc cảnh quan như các bức tranh được vẽ thông thường. </p>
                 </div>
-            </div>
-            <div class="image">
-                <div class="background-blur"></div>
-                <img src="Rectangle.png" alt="">
             </div>
         </div>
     </section>
@@ -165,13 +168,14 @@
         </div>
     </section>
 
+
     <section class="featured-funders">
         <div class="frame">
             <h2>Những dự án gần đây</h2>
             <h3>Dự án đang gọi vốn</h3>
             <div class="funders">
                 <div class="funder">
-                    
+
                     <img src="project8.png" alt="Funder 1">
                     <div class="info">
                         <div class="content">
@@ -196,11 +200,11 @@
                     </div>
                 </div>
                 <div class="funder">
-                    
+
                     <img src="project7.png" alt="Funder 1">
                     <div class="info">
                         <div class="content">
-                            <h2 >Dự án "Trợ Thính VR" </h2>
+                            <h2>Dự án "Trợ Thính VR" </h2>
                             <h3>Trần Thị Thùy Linh</h3>
                         </div>
                         <div class="coin">
@@ -221,7 +225,7 @@
                     </div>
                 </div>
                 <div class="funder">
-                    
+
                     <img src="project6.png" alt="Funder 1">
                     <div class="info">
                         <div class="content">
@@ -246,7 +250,7 @@
                     </div>
                 </div>
                 <div class="funder">
-                    
+
                     <img src="project5.png" alt="Funder 1">
                     <div class="info">
                         <div class="content">
@@ -273,7 +277,7 @@
             </div>
             <div class="funders">
                 <div class="funder">
-                    
+
                     <img src="project4.png" alt="Funder 1">
                     <div class="info">
                         <div class="content">
@@ -298,7 +302,7 @@
                     </div>
                 </div>
                 <div class="funder">
-                    
+
                     <img src="project3.png" alt="Funder 1">
                     <div class="info">
                         <div class="content">
@@ -323,7 +327,7 @@
                     </div>
                 </div>
                 <div class="funder">
-                    
+
                     <img src="project2.png" alt="Funder 1">
                     <div class="info">
                         <div class="content">
@@ -348,7 +352,7 @@
                     </div>
                 </div>
                 <div class="funder">
-                    
+
                     <img src="project1.png" alt="Funder 1">
                     <div class="info">
                         <div class="content">
@@ -393,23 +397,53 @@
                 <a href="#">Creators</a>
                 <a href="funders.html">Funders</a>
             </div>
-            
+
         </div>
 
-        <div>
+        <div class="imgfunder">
             <img class="Imgfund3" src="Imgfund3.png" alt="UniFund Intro">
             <img class="Imgfund" src="Imgfund.png" alt="UniFund Intro">
             <img class="Imgfund2" src="Imgfund2.png" alt="UniFund Intro">
         </div>
-        
+
     </section>
 
-    <footer class="footer">
+    <section class="introduce" style="margin-top: 100px">
+        <h2>Giới thiệu dự án UniFund</h2>
+        <iframe width="1280px" height="600" style="margin-left: 120px;"
+            src="https://www.youtube.com/embed/Fst_YZ2tvDM?si=vJyNp8CmR0cMZwF5" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+
+    <footer class="footer" style="margin-top: 100px; border-top: 1px solid #23262F;">
         <div class="footer-content">
-            <p>UniFund</p>
-            <p>&copy; 2024 UniFund. All rights reserved.</p>
+            <img src="logo.png" alt="">
+            <div>
+                <p>About us</p>
+                <p class="distance">Các dự án</p>
+            </div>
+            <div>
+                <p>FAQs</p>
+                <p class="distance">Creators</p>
+            </div>
+            <div>
+                <p>Funders</p>
+                <p class="distance">Tham gia UniFund</p>
+            </div>
+            <div>
+
+            </div>
         </div>
     </footer>
 </body>
+<script>
+    function toggleMenu() {
+        const mobileMenu = document.querySelector('.mobile-menu');
+        mobileMenu.classList.toggle('active');
+    }
+</script>
 
 </html>
