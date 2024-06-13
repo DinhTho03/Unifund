@@ -127,4 +127,9 @@ body {
   .sub-content .desc {
     font-size: 14px;
   }
+
+  iframe {
+    width: 380px;
+    margin-right: 120px;
+  }
 }
