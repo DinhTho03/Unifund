@@ -1,0 +1,241 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #000;
+  color: #fcfcfd;
+}
+
+.hero {
+  max-width: 1120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.hero .hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero .hero-bg {
+  width: 100%;
+  height: 655px;
+  background: url(../placeholder.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.procedure {
+  max-width: 1120px;
+  margin: 24px auto;
+}
+
+.procedure .procedure-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 56px;
+  margin-bottom: 80px;
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.steps .step {
+  position: relative;
+  display: flex;
+  gap: 32px;
+}
+
+.steps .step .line {
+  position: absolute;
+}
+.step .line1 {
+  top: 34px;
+  left: 192px;
+}
+.step .line2 {
+  top: 34px;
+  left: 480px;
+}
+.step .line3 {
+  top: 34px;
+  left: 768px;
+}
+.steps .step .sub-step {
+  max-width: 256px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+
+.step .sub-step span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #777e90;
+  margin-bottom: 16px;
+}
+
+.step .sub-step .step-icon {
+  margin-bottom: 64px;
+}
+.step .sub-step .step-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.step .sub-step .step-desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b1b5c3;
+}
+
+.line-bottom {
+  background: #23262f;
+  width: 100%;
+  height: 1px;
+}
+
+.send-create {
+  max-width: 1120px;
+  margin: 90px auto 0px;
+  display: flex;
+  gap: 28px;
+}
+
+.send-create .left {
+  max-width: 382px;
+  background: #23262f;
+  border-radius: 24px;
+  padding: 32px 24px;
+}
+
+.send-create .left .title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.send-create .left .desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #d1d5db;
+}
+
+.send-create .right {
+  max-width: 512px;
+  padding: 30px 50px 30px;
+  background: #23262f;
+  border-radius: 24px;
+}
+
+.send-create .right .form {
+  max-width: 512px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form .group .label {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #f4f5f6;
+  margin-bottom: 6px;
+}
+.group .input {
+  border: 1px solid #777e90;
+  border-radius: 12px;
+}
+.group .input input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #777e90;
+  font-size: 16px;
+  padding: 10px 14px;
+}
+
+.group .input textarea {
+  color: #777e90;
+  font-size: 16px;
+  padding: 10px 14px;
+  background: transparent;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.form .btn {
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+  background: #1b8271;
+  border-radius: 12px;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    max-width: 100%;
+    margin: 0 32px;
+  }
+  .hero .hero-bg {
+    border-radius: 24px;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+  }
+  .procedure {
+    margin: 0 32px;
+  }
+  .procedure .procedure-title {
+    text-align: left;
+    margin-bottom: 64px;
+  }
+  .steps .step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .steps .step .sub-step {
+    max-width: 100%;
+    align-items: start;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #353945;
+  }
+  .step .sub-step span {
+    display: none;
+  }
+  .step .sub-step .step-desc {
+    text-align: left;
+  }
+  .step .sub-step .step-icon {
+    margin: 0;
+  }
+  .steps .step .line {
+    display: none;
+  }
+  .send-create {
+    flex-direction: column;
+    margin: 72px 16px 32px;
+  }
+  .send-create .right {
+    padding: 24px 16px;
+  }
+}

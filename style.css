@@ -298,8 +298,8 @@ body {
   border-radius: 32px;
   overflow: hidden;
 }
-.successful-projects .project .image
-{}
+.successful-projects .project .image {
+}
 .successful-projects .project .image .background-blur {
   position: absolute;
   top: 0;
@@ -372,7 +372,9 @@ body {
   font-size: 48px;
   font-weight: 700;
 }
-.unifund-goals .goal, .funder-project .project, .featured-funders .funder {
+.unifund-goals .goal,
+.funder-project .project,
+.featured-funders .funder {
   width: 80%;
 }
 .benefit,
@@ -744,7 +746,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .main-content .intro{
+  .main-content .intro {
     font-size: 2rem;
   }
   .header .nav-links {
@@ -790,7 +792,7 @@ body {
     width: 100%;
     font-size: 1rem;
   }
-  .features{
+  .features {
     display: flex;
     width: 25%;
     padding: 50px;
@@ -798,17 +800,20 @@ body {
     justify-content: flex-end;
     border-radius: 24px;
     border: 1px solid #353945;
-    background: var(--neutral-2-glass, linear-gradient(93deg, #23262f 3.54%, rgba(35, 38, 47, 0.7) 93.38%));
+    background: var(
+      --neutral-2-glass,
+      linear-gradient(93deg, #23262f 3.54%, rgba(35, 38, 47, 0.7) 93.38%)
+    );
     box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
     backdrop-filter: blur(16px);
-    margin: 500px 10px 50px 230px;;
+    margin: 500px 10px 50px 230px;
   }
 
-  .features .feature{
+  .features .feature {
     display: flex;
     width: 209px;
-    height: 73PX;
-    margin:  0;
+    height: 73px;
+    margin: 0;
     align-items: flex-start;
     align-content: stretch;
     justify-content: space-between;
@@ -859,39 +864,39 @@ body {
   }
 
   .unifund-intro {
-     padding-left: 80px;
+    padding-left: 80px;
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .unifund-intro h2{
+  .unifund-intro h2 {
     width: 80%;
     margin: 0;
 
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 56px; /* 116.667% */
-letter-spacing: -0.96px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -0.96px;
   }
-  .unifund-intro .detail-info{
+  .unifund-intro .detail-info {
     width: 70%;
   }
-  .unifund-intro .imgfunder{
+  .unifund-intro .imgfunder {
     margin-top: 120px;
   }
-  .unifund-intro .cate{
+  .unifund-intro .cate {
     width: 80%;
   }
 
-  .introduce  h2{
+  .introduce h2 {
     margin-top: 500px;
     width: 80%;
   }
 
-  .introduce  iframe{
+  .introduce iframe {
     width: 600px;
   }
   .unifund-goals .goal,
@@ -948,11 +953,46 @@ letter-spacing: -0.96px;
 }
 
 @media (max-width: 480px) {
-  
+  .features {
+    display: flex;
+    margin-left: 20px;
+    padding-right: 286px;
+    margin-right: 0;
+    border: 0;
+    padding-bottom: 30px;
+    gap: 50px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .features .feature {
+    display: flex;
+    width: 209px;
+    height: 20x;
+    margin: 0;
+
+    margin-left: 80px;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+  }
 
   .header .left nav a,
   .header .right .funders-btn {
     font-size: 0.8rem;
+  }
+
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 0;
+  }
+
+  .main-content .intro p,
+  .benefit .slogan {
+    margin-top: 0;
   }
 
   .why-unifund h2,
@@ -961,7 +1001,30 @@ letter-spacing: -0.96px;
   .funder-project h2,
   .featured-funders h2,
   .unifund-intro h2 {
-    font-size: 1.2rem;
+    color: var(--Neutrals-8, #fcfcfd);
+    padding-top: 0;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    letter-spacing: -0.32px;
+  }
+
+  .why-unifund {
+    text-align: center;
+  }
+
+  .why-unifund h3{
+    width: 50%;
+    padding-left: 119px;
+  }
+
+  .why-unifund h2{
+    padding-left: 95px;
+    max-width: 60%;
+    letter-spacing: -1.28px;
   }
 
   .why-unifund h3,
