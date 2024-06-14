@@ -403,7 +403,8 @@ body {
   }
 
   .hero-header{
-    width: 95%;
+    width: 92%;
+    margin-left: 20px;
   }
   
   .procedure .process-selection {
