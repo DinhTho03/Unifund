@@ -1,7 +1,9 @@
 body {
   font-family: Montserrat;
-  background: #000;
-  color: #fcfcfd;
+  margin: 0;
+  background-color: #141416;
+  color: #fff;
+  overflow-x: hidden;
 }
 
 .hero {

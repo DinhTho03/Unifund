@@ -1,7 +1,9 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  color: #fcfcfd;
-  background: #000;
+  font-family: Montserrat;
+  margin: 0;
+  background-color: #141416;
+  color: #fff;
+  overflow-x: hidden;
 }
 
 .header {
