@@ -1,7 +1,9 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  background: #000;
-  color: #fcfcfd;
+  font-family: Montserrat;
+  margin: 0;
+  background-color: #141416;
+  color: #fff;
+  overflow-x: hidden;
 }
 .header {
   display: flex;
@@ -14,7 +16,7 @@ body {
 }
 
 .header .left,
-.header .right {
+.header .right2 {
   display: flex;
   align-items: center;
 }
@@ -30,7 +32,7 @@ body {
   color: #fff;
 }
 
-.header .right .funders-btn {
+.header .right2 .funders-btn {
   margin: 0 10px;
   padding: 5px 15px;
   background-color: #fff;
@@ -40,17 +42,17 @@ body {
   cursor: pointer;
 }
 
-.header .right .icon,
-.header .right .avatar {
+.header .right2 .icon,
+.header .right2 .avatar {
   margin-left: 10px;
 }
 
-.header .right .icon {
+.header .right2 .icon {
   width: 24px;
   height: 24px;
 }
 
-.header .right .avatar {
+.header .right2 .avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -259,7 +261,7 @@ body {
   margin: 16px 0;
 }
 
-.info .top .right {
+.info .top .right2 {
   width: 48px;
   height: 44px;
   border: 2px solid #58c27d;
@@ -270,17 +272,17 @@ body {
   gap: 6px;
 }
 
-.top .right .gain {
+.top .right2 .gain {
   font-size: 12px;
   font-weight: 700;
   color: #777e90;
 }
-.right .gain-money {
+.right2 .gain-money {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-.right .gain-money span {
+.right2 .gain-money span {
   font-size: 12px;
   font-weight: 700;
   color: #58c27d;
@@ -300,13 +302,13 @@ body {
   color: #fcfcfd;
 }
 
-.bottom .right {
+.bottom .right2 {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-.bottom .right span {
+.bottom .right2 span {
   font-size: 12px;
   font-weight: 600;
   line-height: 20px;
