@@ -7,6 +7,7 @@
     color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
   .header .menu-icon {
     display: none;
     font-size: 30px;
@@ -25,12 +26,11 @@
     text-decoration: none;
     color: var(--Neutrals-4, #777e90);
     text-align: center;
-    /* Button 2 */
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 16px; /* 114.286% */
+    line-height: 16px;
   }
   
   .header .left .logo {
@@ -84,8 +84,7 @@
     .header  {
         margin-top: 20px;
         margin-left: 10px;
-        width: 90%;
-        padding: 0;
+        width: 80%;
       }
       
     
@@ -123,11 +122,11 @@
         margin-top: 20px;
       margin-left: 10px;
       width: 90%;
-      padding: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 10px  16px;
+      padding-left: 0;
      
     }
     
