@@ -16,6 +16,17 @@
     <title>Dự án "góp xanh học đường"</title>
   </head>
   <body>
+    <header class="header">
+      <div class="left">
+          <a href="index.html"><img src="logo.png" alt="UniFund Logo" class="logo"></a>
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </div>
+      <div class="right">
+          <a href="FAQS.html">FAQs</a>
+          <a href="Creators.html">Creators</a>
+          <a href="funders.html" class="funders-btn">Funders</a>
+      </div>
+  </header>
     <section class="header">
       <h1 class="header-title">Dự án "góp xanh học đường"</h1>
       <div class="hero">
@@ -103,5 +114,31 @@
         </div>
       </div>
     </section>
+    <footer class="footer" style="margin-top: 60px; border-top: 1px solid #23262F;">
+      <div class="footer-content">
+          <a href="index.html"><img src="logo.png" alt="UniFund Logo" class="logo"></a>
+          <div>
+              <a href="#">About Us</a>
+              <a href="" class="distance">Các dự án</a>
+          </div>
+          <div>
+              <a href="FAQS.html">FAQs</a>
+              <a href="Creators.html" class="distance">Creators</a>
+          </div>
+          <div>
+              <a href="funders.html"> Funders</a>
+              <a href="funders.html" class="distance">Tham gia UniFund</a>
+          </div>
+          <div>
+
+          </div>
+      </div>
+  </footer>
   </body>
+  <script>
+    function toggleMenu() {
+        const menu = document.querySelector('.right');
+        menu.classList.toggle('show');
+    }
+</script>
 </html>
