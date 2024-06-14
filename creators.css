@@ -135,14 +135,14 @@ body {
   color: #d1d5db;
 }
 
-.send-create .right {
+.send-create .right2 {
   max-width: 512px;
   padding: 30px 50px 30px;
   background: #23262f;
   border-radius: 24px;
 }
 
-.send-create .right .form {
+.send-create .right2 .form {
   max-width: 512px;
   display: flex;
   flex-direction: column;
@@ -250,7 +250,7 @@ line-height: 24px;
     flex-direction: column;
     margin: 72px 16px 32px;
   }
-  .send-create .right {
+  .send-create .right2 {
     padding: 24px 16px;
   }
 }
