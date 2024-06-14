@@ -403,7 +403,7 @@ body {
   }
 
   .hero-header{
-    width: 98%;
+    width: 95%;
   }
   
   .procedure .process-selection {
@@ -439,24 +439,28 @@ body {
   }
   .project {
     width: 90%;
-    margin: 32px 16px 0;
-    margin-left: 0;
+    margin-left: 20px;
     margin-right: 0;
+    margin-top: 60px;
 
   }
   .project .project-title {
+    width: 350px;
     font-size: 32px;
     height: 40px;
     line-height: 40px;
     border: none;
     padding: 0;
-    margin: 0 0 16px 0;
+    margin-bottom: 70px;
+    margin-left: 30px;
   }
   .project-select {
+    margin-left: 40px;
+    width: 380px;
     grid-template-columns: 1fr;
   }
   .project-select .project-option {
-    width: auto;
+    width: 90%;
   }
   .project-option .project-bg {
     width: 100%;
