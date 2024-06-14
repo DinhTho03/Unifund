@@ -6,13 +6,53 @@ body {
   overflow-x: hidden;
 }
 
-.header {
+.header2 {
   max-width: 1120px;
   margin: 25px auto 40px;
   padding: 0 16px;
 }
 
-.header-title {
+.header2-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: left;
+}
+
+.hero {
+  margin-top: 40px;
+  display: flex;
+  gap: 8px;
+}
+
+.hero-left {
+  max-width: 856px;
+}
+
+.hero-left img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-right {
+  max-width: 256px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-right img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.header2 {
+  max-width: 1120px;
+  margin: 25px auto 40px;
+  padding: 0 16px;
+}
+
+.header2-title {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -164,10 +204,10 @@ body {
 }
 
 @media (max-width: 500px) {
-  .header {
+  .header2 {
     padding: 0 32px;
   }
-  .header-title {
+  .header2-title {
     font-size: 32px;
   }
   .hero {
