@@ -347,7 +347,9 @@ body {
     gap: 0px;
     border-radius: 24px;
     margin: 0 16px;
+    margin-top: 20px  ;
   }
+
   .hero-content .header-title {
     display: flex;
     align-items: center;
@@ -404,7 +406,7 @@ body {
 
   .hero-header{
     width: 92%;
-    margin-left: 20px;
+    margin-left: 10px;
   }
   
   .procedure .process-selection {

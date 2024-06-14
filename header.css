@@ -80,6 +80,7 @@
   .header {
     margin-top: 20px;
     margin-left: 10px;
+    margin-bottom: 10px;
     width: 80%;
   }
 
@@ -97,7 +98,7 @@
     display: block;
   }
   .header .left .menu-icon {
-    margin-left: 270px;
+    margin-left: 250px;
     padding: 0;
     display: flex;
   }
@@ -115,7 +116,7 @@
 
   .header {
     margin-top: 20px;
-    margin-left: 0px;
+    margin-left: 15px;
     width: 90%;
     display: flex;
     justify-content: space-between;
