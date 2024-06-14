@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" /><link rel="icon" href="/Layer_1.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,9 +11,22 @@
     />
     <link rel="stylesheet" href="./reset2.css" />
     <link rel="stylesheet" href="./creators.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./footer.css" />
     <title>Document</title>
   </head>
   <body>
+    <header class="header">
+      <div class="left">
+        <a href="index.html"><img src="logo.png" alt="UniFund Logo" class="logo"></a>
+          <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </div>
+      <div class="right">
+          <a href="FAQS.html">FAQs</a>
+          <a href="Creators.html">Creators</a>
+          <a href="funders.html" class="funders-btn">Funders</a>
+      </div>
+  </header>
     <section class="hero">
       <h1 class="hero-title">Creators</h1>
       <div class="hero-bg"></div>
@@ -127,9 +140,37 @@
               ></textarea>
             </div>
           </div>
-          <div class="btn">Gửi dự án</div>
+          <button class="btn">Gửi dự án</button>
         </div>
       </div>
     </section>
+
+    <footer class="footer" style="margin-top: 60px; border-top: 1px solid #23262F;">
+      <div class="footer-content">
+        <a href="index.html"><img src="logo.png" alt="UniFund Logo" class="logo"></a>
+          <div>
+              <a href="#">About Us</a>
+              <a href="" class="distance">Các dự án</a>
+          </div>
+          <div>
+              <a href="FAQS.html">FAQs</a>
+              <a href="Creators.html" class="distance">Creators</a>
+          </div>
+          <div>
+              <a href="funders.html"> Funders</a>
+              <a href="funders.html" class="distance">Tham gia UniFund</a>
+          </div>
+          <div>
+
+          </div>
+      </div>
+  </footer>
   </body>
+
+  <script>
+    function toggleMenu() {
+        const menu = document.querySelector('.right');
+        menu.classList.toggle('show');
+    }
+</script>
 </html>

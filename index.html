@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Layer_1.svg">
     <title>UniFund</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,23 +13,20 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
     <header class="header">
         <div class="left">
-            <img src="logo.png" alt="UniFund Logo" class="logo">
-            <nav class="nav-links">
-                <a href="#about-us">About Us</a>
-                <a href="FAQS.html">FAQs</a>
-                <a href="#creators">Creators</a>
-            </nav>
-            <div class="menu-icon" onclick="toggleMenu()">
-                ☰
-              </div>    
+            <a href="index.html"><img src="logo.png" alt="UniFund Logo" class="logo"></a>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
         </div>
         <div class="right">
-            <button class="funders-btn">Funders</button>
+            <a href="FAQS.html">FAQs</a>
+            <a href="Creators.html">Creators</a>
+            <a href="funders.html" class="funders-btn">Funders</a>
         </div>
     </header>
 
@@ -94,15 +92,15 @@
 
     <section class="successful-projects">
         <h2>Dự án kêu gọi thành công trên nền tảng UniFund</h2>
-        <h3>Cập nhật thông tin về dự án</h3>
+        <h3 class="sub-content">Cập nhật thông tin về dự án</h3>
         <div class="project">
             <div class="image">
                 <div class="background-blur"></div>
                 <img src="Rectangle.png" alt="">
             </div>
             <div class="main-project">
-                <div class="detail-project">
-                    <h7 class="number1">01</h7>
+                <div class="detail-project2">
+                    <h7 class="number1" id="number">01</h7>
                     <span class="title">Dự án BIO PICTURE</span>
                     <p>BioPicture là một dự án về mảng thiết kế xanh cung cấp một cách tiếp cận mới bền vững hơn
                         trong trang trí nội thất.</p>
@@ -120,67 +118,24 @@
                     <p>BioPicture, hay còn gọi là bức tranh sinh học, là một khung tranh làm từ gỗ và tre và được
                         trồng đa dạng loài thực vật để phục vụ nhu cầu trang trí tại nhà ở hoặc không gian sống nhưng
                         vẫn đảm bảo tính mỹ thuật của kiến trúc cảnh quan như các bức tranh được vẽ thông thường. </p>
+
                 </div>
+
+                <a href="" class="read-more">Đọc thêm</a>
             </div>
         </div>
     </section>
-
-    <section class="unifund-goals">
-        <h2>Mục tiêu của UniFund</h2>
-        <div class="goals">
-            <div class="goal">
-                <img src="iconbox.png" alt="">
-                <div>Crowdfunding</div>
-                <p>UniFund mong muốn mang khái niệm “crowdfunding” trở nên phổ biến và có tiếp cận nhiều hơn với cộng
-                    đồng người trẻ Việt.</p>
-            </div>
-            <div class="goal">
-                <img src="iconbox2.png" alt="">
-                <div>Tính Cấp Thiết</div>
-                <p>UniFund mong muốn mang khái niệm “crowdfunding” trở nên phổ biến và có tiếp cận nhiều hơn với cộng
-                    đồng người trẻ Việt.</p>
-            </div>
-            <div class="goal">
-                <img src="iconbox3.png" alt="">
-                <div>Cơ hội</div>
-                <p>UniFund mong muốn mang khái niệm “crowdfunding” trở nên phổ biến và có tiếp cận nhiều hơn với cộng
-                    đồng người trẻ Việt.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="funder-project">
-        <h2>Đọc thêm các dự án gọi vốn thành công</h2>
-        <h3>Thêm nữa các dự án trên nền tảng</h3>
-        <div class="projects">
-            <div class="project">
-                <img src="imgcontainer.png" alt="Recent Project 1">
-                <p>Sản Phẩm Công Nghệ “Vòng Tay Tâm Lý”</p>
-            </div>
-            <div class="project">
-                <img src="imgcontainer3.png" alt="Recent Project 2">
-                <p>MyGrand - Phần Mềm Hỗ Trợ Sử Dụng Điện Thoại Cho Người Cao Tuổi</p>
-            </div>
-            <div class="project">
-                <img src="imgcontainer2.png" alt="Recent Project 2">
-                <p>Sản Phẩm “Electric Skateboard</p>
-            </div>
-        </div>
-    </section>
-
 
     <section class="featured-funders">
         <div class="frame">
-            <h2>Những dự án gần đây</h2>
-            <h3>Dự án đang gọi vốn</h3>
+            <h2>Những dự án đang kêu gọi</h2>
             <div class="funders">
                 <div class="funder">
-
                     <img src="project8.png" alt="Funder 1">
                     <div class="info">
                         <div class="content">
-                            <h2>Dự Án “Đem Điện Về Bản Làng”</h2>
-                            <h3>Lê Văn Anh Thư</h3>
+                            <h2>Góp Xanh Học Đường</h2>
+                            <h3>Lê Tuấn Kiệt</h3>
                         </div>
                         <div class="coin">
                             <h4>GAIN</h4>
@@ -192,7 +147,7 @@
                     </div>
                     <hr>
                     <div class="time-raise-fund">
-                        <h3>Thời gian còn lại - 10 ngày</h3>
+                        <h3>Thời gian còn lại - 15 ngày</h3>
                         <div class="raise-funder-seed-coin">
                             <img src="Filled.png" alt="">
                             <h5>15</h5>
@@ -204,7 +159,7 @@
                     <img src="project7.png" alt="Funder 1">
                     <div class="info">
                         <div class="content">
-                            <h2>Dự án "Trợ Thính VR" </h2>
+                            <h2>Phát cơm từ thiện</h2>
                             <h3>Trần Thị Thùy Linh</h3>
                         </div>
                         <div class="coin">
@@ -229,8 +184,8 @@
                     <img src="project6.png" alt="Funder 1">
                     <div class="info">
                         <div class="content">
-                            <h2>Dự Án “Cùng các Em” </h2>
-                            <h3>Bùi Thị Thanh Hương</h3>
+                            <h2>BIO PICTURE</h2>
+                            <h3>Nguyễn Phúc Tân</h3>
                         </div>
                         <div class="coin">
                             <h4>GAIN</h4>
@@ -249,136 +204,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="funder">
-
-                    <img src="project5.png" alt="Funder 1">
-                    <div class="info">
-                        <div class="content">
-                            <h2>CLB Từ Tâm Smile as Present</h2>
-                            <h3>Lê Văn Thành Long</h3>
-                        </div>
-                        <div class="coin">
-                            <h4>GAIN</h4>
-                            <div class="seed-coin">
-                                <h4 class="gain">9</h4>
-                                <img src="Filled.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="time-raise-fund">
-                        <h3>Thời gian còn lại - 7 ngày</h3>
-                        <div class="raise-funder-seed-coin">
-                            <img src="Filled.png" alt="">
-                            <h5>40</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="funders">
-                <div class="funder">
-
-                    <img src="project4.png" alt="Funder 1">
-                    <div class="info">
-                        <div class="content">
-                            <h2>EcoPlas - phân bón hữu cơ</h2>
-                            <h3>Vũ Quang Hùng</h3>
-                        </div>
-                        <div class="coin">
-                            <h4>GAIN</h4>
-                            <div class="seed-coin">
-                                <h4 class="gain">5</h4>
-                                <img src="Filled.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="time-raise-fund">
-                        <h3>Thời gian còn lại - 13 ngày</h3>
-                        <div class="raise-funder-seed-coin">
-                            <img src="Filled.png" alt="">
-                            <h5>39</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="funder">
-
-                    <img src="project3.png" alt="Funder 1">
-                    <div class="info">
-                        <div class="content">
-                            <h2>Dự Án Đánh Giá Xâm Nhập Mặn</h2>
-                            <h3>Nguyễn Thị Hằng</h3>
-                        </div>
-                        <div class="coin">
-                            <h4>GAIN</h4>
-                            <div class="seed-coin">
-                                <h4 class="gain">19</h4>
-                                <img src="Filled.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="time-raise-fund">
-                        <h3>Thời gian còn lại - 6 ngày</h3>
-                        <div class="raise-funder-seed-coin">
-                            <img src="Filled.png" alt="">
-                            <h5>45</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="funder">
-
-                    <img src="project2.png" alt="Funder 1">
-                    <div class="info">
-                        <div class="content">
-                            <h2>Dự Án “Ống Hút Bằng Cỏ Bàng”</h2>
-                            <h3>Phạm Thị Thanh Hương</h3>
-                        </div>
-                        <div class="coin">
-                            <h4>GAIN</h4>
-                            <div class="seed-coin">
-                                <h4 class="gain">8</h4>
-                                <img src="Filled.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="time-raise-fund">
-                        <h3>Thời gian còn lại - 6 ngày</h3>
-                        <div class="raise-funder-seed-coin">
-                            <img src="Filled.png" alt="">
-                            <h5>36</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="funder">
-
-                    <img src="project1.png" alt="Funder 1">
-                    <div class="info">
-                        <div class="content">
-                            <h2>Dự Án Smarter Energy</h2>
-                            <h3>Trần Văn Anh Quân</h3>
-                        </div>
-                        <div class="coin">
-                            <h4>GAIN</h4>
-                            <div class="seed-coin">
-                                <h4 class="gain">5</h4>
-                                <img src="Filled.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="time-raise-fund">
-                        <h3>Thời gian còn lại - 9 ngày</h3>
-                        <div class="raise-funder-seed-coin">
-                            <img src="Filled.png" alt="">
-                            <h5>43</h5>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
+    </section>
 
+    <section class="unifund-goals">
+        <h2>Mục tiêu của UniFund</h2>
+        <div class="goals">
+            <div class="goal">
+                <img src="iconbox.png" alt="">
+                <div>Crowdfunding</div>
+                <p>UniFund mong muốn mang khái niệm “crowdfunding” trở nên phổ biến và có tiếp cận nhiều hơn với cộng đồng người trẻ Việt.</p>
+            </div>
+            <div class="goal">
+                <img src="iconbox2.png" alt="">
+                <div>Tính Cấp Thiết</div>
+                <p>Với tính cấp thiết ngày càng tăng của việc kêu gọi vốn/gây quỹ và quyên góp/đầu tư, UniFund sẽ là một giải pháp đáng tin cậy và hiệu quả.</p>
+            </div>
+            <div class="goal">
+                <img src="iconbox3.png" alt="">
+                <div>Cơ hội</div>
+                <p>Nền tảng này không chỉ tạo cơ hội cho creators và funders, mà còn xây dựng một cộng đồng mạnh mẽ và minh bạch.</p>
+            </div>
+        </div>
     </section>
 
     <section class="unifund-intro">
@@ -410,28 +258,27 @@
 
     <section class="introduce" style="margin-top: 100px">
         <h2>Giới thiệu dự án UniFund</h2>
-        <iframe width="1280px" height="600" style="margin-left: 120px;"
-            src="https://www.youtube.com/embed/Fst_YZ2tvDM?si=vJyNp8CmR0cMZwF5" title="YouTube video player"
-            frameborder="0"
+        <iframe width="1460px" height="600" style="margin-left: 40px;" src="https://www.youtube.com/embed/Fst_YZ2tvDM?si=vJyNp8CmR0cMZwF5"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     </section>
 
-    <footer class="footer" style="margin-top: 100px; border-top: 1px solid #23262F;">
+    <footer class="footer" style="margin-top: 60px; border-top: 1px solid #23262F;">
         <div class="footer-content">
-            <img src="logo.png" alt="">
+            <a href="index.html"><img src="logo.png" alt="UniFund Logo" class="logo"></a>
             <div>
-                <p>About us</p>
-                <p class="distance">Các dự án</p>
+                <a href="#">About Us</a>
+                <a href="" class="distance">Các dự án</a>
             </div>
             <div>
-                <p>FAQs</p>
-                <p class="distance">Creators</p>
+                <a href="FAQS.html">FAQs</a>
+                <a href="Creators.html" class="distance">Creators</a>
             </div>
             <div>
-                <p>Funders</p>
-                <p class="distance">Tham gia UniFund</p>
+                <a href="funders.html"> Funders</a>
+                <a href="funders.html" class="distance">Tham gia UniFund</a>
             </div>
             <div>
 
@@ -439,11 +286,11 @@
         </div>
     </footer>
 </body>
+
 <script>
     function toggleMenu() {
-        const mobileMenu = document.querySelector('.mobile-menu');
-        mobileMenu.classList.toggle('active');
+        const menu = document.querySelector('.right');
+        menu.classList.toggle('show');
     }
 </script>
-
 </html>

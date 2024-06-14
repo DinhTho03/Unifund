@@ -6,58 +6,6 @@ body {
   overflow-x: hidden;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #141416;
-  color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.header .left,
-.header .right {
-  display: flex;
-  align-items: center;
-}
-
-.header .left .logo {
-  height: 40px;
-  margin-right: 20px;
-}
-
-.header .left nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.header .right .funders-btn {
-  margin: 0 10px;
-  padding: 5px 15px;
-  background-color: #fff;
-  color: #000;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.header .right .icon,
-.header .right .avatar {
-  margin-left: 10px;
-}
-
-.header .right .icon {
-  width: 24px;
-  height: 24px;
-}
-
-.header .right .avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
 
 .main-content {
   display: flex;
@@ -66,6 +14,7 @@ body {
 
 .intro {
   position: absolute;
+  z-index: 0;
 }
 
 .main-content .intro {
@@ -208,12 +157,14 @@ body {
   padding: 8px 12px 6px 12px;
 }
 .successful-projects {
-  width: 80%;
+  padding-top: 0;
+  margin-top: 0;
+  width: 100%;
 }
 
 .successful-projects h2 {
   max-width: 50%;
-  padding: 0 0 0 26%;
+  padding: 0 0 0 24%;
   text-align: center;
   font-size: 48px;
   font-weight: 700;
@@ -228,24 +179,27 @@ body {
 }
 
 .successful-projects .project {
-  width: 500px;
+  width: 40%;
   margin-top: 100px;
   display: flex;
   text-align: left;
   color: #fcfcfd;
 }
 
-.successful-projects .project .detail-project {
+.successful-projects .project .detail-project,
+.successful-projects .project .detail-project2 {
   margin-bottom: 60px;
-  margin-left: 100px;
+  margin-left: 150px;
   width: 500px;
 }
 
-.successful-projects .project .detail-project h7 {
+.successful-projects .project .detail-project h7,
+.successful-projects .project .detail-project2 h7 {
   margin-bottom: 30px;
 }
 
-.successful-projects .project .detail-project .title {
+.successful-projects .project .detail-project .title,
+.successful-projects .project .detail-project2 .title {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -282,6 +236,26 @@ body {
   gap: 10px;
 }
 
+.successful-projects .project .read-more {
+  margin-top: 50px;
+  font-family: Montserrat;
+  width: 100px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 90px;
+  line-height: 16px;
+  color: #fcfcfd;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--Primary-Uni, #1b8271);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+}
+
 .successful-projects .project .detail-project p {
   font-size: 14px;
   font-style: normal;
@@ -299,14 +273,13 @@ body {
   overflow: hidden;
 }
 .successful-projects .project .image {
+  margin-left: 120px;
+  text-align: center;
 }
 .successful-projects .project .image .background-blur {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 60%;
   height: 100%;
-  margin: 0;
   background-image: url("BackgroundRectangle.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -320,7 +293,7 @@ body {
   object-fit: cover;
   position: relative;
   margin-top: 70px;
-  margin-left: 50px;
+  margin-left: 0;
   z-index: 1;
   border-radius: 32px;
 }
@@ -341,9 +314,7 @@ body {
 
 .unifund-goals .goals {
   margin-top: 80px;
-}
-
-.unifund-goals .goals {
+  margin-left: 160px;
   width: 80%;
 }
 
@@ -351,21 +322,30 @@ body {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  text-align: center;
   color: #fcfcfd;
+  text-align: inherit;
 }
 
 .unifund-goals .goals .goal p {
+  margin-left: 30px;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  text-align: justify;
-  width: 300px;
   text-align: center;
+  color: var(--Neutrals-4, #777E90);
+text-align: center;
+/* Caption */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+  width: 80%;
 }
 
 .unifund-goals h2 {
+  margin-top: 0px;
   max-width: 660px;
   padding: 0 0 0 28%;
   text-align: center;
@@ -418,6 +398,11 @@ body {
   padding-left: 30px;
   text-align: center;
 }
+.featured-funders {
+  margin-left: 60px;
+  margin-top: 0;
+  padding-top: 0;
+}
 
 .featured-funders h2 {
   font-size: 48px;
@@ -426,10 +411,15 @@ body {
   font-weight: 700;
   line-height: 56px;
   letter-spacing: -0.96px;
+  font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 120% */
+letter-spacing: -0.4px;
 }
 
 .featured-funders h3 {
-  text-align: center;
   text-align: left;
   color: #777e90;
   font-size: 24px;
@@ -445,7 +435,6 @@ body {
   align-items: center;
   gap: 64px;
   border-radius: 24px;
-  border: 2px solid #23262f;
   background: #141416;
 }
 
@@ -455,13 +444,11 @@ body {
 
 .featured-funders .frame .funders .funder {
   display: block;
+  width: 80%;
   align-items: center;
   gap: 64px;
   border-radius: 32px;
   border: 2px solid #23262f;
-  background: #141416;
-
-  background: #23262f;
 }
 
 .featured-funders .frame .funders .funder hr {
@@ -472,11 +459,13 @@ body {
 
 .featured-funders .frame .funders .funder .info {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .featured-funders .frame .funders .funder h2 {
-  width: 143px;
-  height: 48px;
+  width: 219px;
+  height: 26px;
   padding-left: 20px;
   font-size: 16px;
   font-style: normal;
@@ -494,6 +483,7 @@ body {
 }
 
 .featured-funders .frame .funders .funder img {
+  width: 100%;
   border-radius: 28px 28px 0px 0px;
 }
 
@@ -502,10 +492,8 @@ body {
 }
 
 .featured-funders .frame .funders .funder .coin {
-  padding-left: 20px;
   display: flex;
   height: 50px;
-  margin-left: 20px;
   margin-top: 27px;
   padding: 0 8px 0 8px;
   flex-direction: column;
@@ -546,7 +534,7 @@ body {
 
 .featured-funders .frame .funders .time-raise-fund .raise-funder-seed-coin {
   margin-top: 10px;
-  padding-left: 31px;
+  padding-left: 35%;
   display: flex;
 }
 
@@ -659,27 +647,28 @@ body {
 }
 
 .unifund-intro .imgfunder {
+  margin-left: 0%;
   margin-top: 80px;
 }
 
 .unifund-intro .Imgfund3 {
   position: absolute;
-  margin-top: 15%;
-  margin-left: 10%;
+  margin-top: 200px;
+  margin-left: 150px;
   border-radius: 10%;
 }
 
 .unifund-intro .Imgfund {
   position: absolute;
-  margin-right: 20%;
-  margin-top: -5%;
+  margin-right: 40px;
+  margin-top: -50px;
   border-radius: 10%;
 }
 
 .unifund-intro .Imgfund2 {
   position: absolute;
-  margin-left: -10%;
-  margin-top: 10%;
+  margin-left: -150px;
+  margin-top: 150px;
   border-radius: 10%;
 }
 
@@ -695,38 +684,10 @@ body {
   margin-left: 120px;
 }
 
-.footer .footer-content {
-  margin-top: 60px;
-  padding: 0;
-  width: 100%;
-  height: 130px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
 
-.footer .footer-content p {
-  color: #777e90;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-  gap: 10px;
-}
-
-.footer .footer-content .distance {
-  margin-top: 30px;
-}
 /* Existing styles */
 
-.header .menu-icon {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: #fff;
-}
+
 
 /* Mobile Menu */
 .mobile-menu {
@@ -749,13 +710,10 @@ body {
   .main-content .intro {
     font-size: 2rem;
   }
-  .header .nav-links {
-    display: none;
-  }
 
-  .header .menu-icon {
-    display: block;
-  }
+  
+
+ 
 
   .mobile-menu.active {
     display: block;
@@ -863,6 +821,10 @@ body {
     align-items: flex-start;
   }
 
+  .successful-projects h2 {
+    margin-right: 30px;
+  }
+
   .unifund-intro {
     padding-left: 80px;
     width: 80%;
@@ -896,9 +858,6 @@ body {
     width: 80%;
   }
 
-  .introduce iframe {
-    width: 600px;
-  }
   .unifund-goals .goal,
   .funder-project .project,
   .featured-funders .funder {
@@ -953,8 +912,25 @@ body {
 }
 
 @media (max-width: 480px) {
+
+ 
+
+  .main-content{
+    
+    width: 90%;
+    padding-left: 0;
+  }
+
+  .main-content .intro {
+    margin-left: 20px;
+    width: 76%;
+    background-image: linear-gradient(0deg, rgba(236, 248, 252, 0.84) 48.56%, rgba(236, 248, 252, 0) 85.73%), url(piggy-bank.png);
+
+  }
   .features {
+    width: 21%;
     display: flex;
+    margin-top: 530px;
     margin-left: 20px;
     padding-right: 286px;
     margin-right: 0;
@@ -988,6 +964,7 @@ body {
     flex-wrap: wrap;
     align-content: center;
     margin-top: 0;
+    margin-left: 30px;
   }
 
   .main-content .intro p,
@@ -1008,23 +985,32 @@ body {
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px; 
+    line-height: 28px;
     letter-spacing: -0.32px;
   }
 
   .why-unifund {
+    padding: 0;
+    width: 90%;
     text-align: center;
   }
 
-  .why-unifund h3{
-    width: 50%;
-    padding-left: 119px;
+  .why-unifund h3 {
+    width: 60%;
+    padding-left: 70px;
   }
 
-  .why-unifund h2{
-    padding-left: 95px;
-    max-width: 60%;
-    letter-spacing: -1.28px;
+  .why-unifund h2 {
+    max-width: 300px;
+    padding-left: 80px;
+    color: var(--Neutrals-8, #fcfcfd);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.32px;
   }
 
   .why-unifund h3,
@@ -1036,4 +1022,230 @@ body {
   .benefit .slogan {
     font-size: 0.8rem;
   }
+  .why-unifund h3 {
+    width: 60%;
+    margin-left: 30px;
+  }
+
+  .successful-projects {
+    margin-top: 38px;
+    width: 91%;
+  }
+
+  .successful-projects h2 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    letter-spacing: -0.4px;
+    max-width: 100%;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  .successful-projects .project .detail-project,
+  #number,
+  .sub-content {
+    display: none;
+  }
+
+  .successful-projects .project .detail-project2 {
+    max-width: 90%;
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .successful-projects .project .detail-project2 span {
+    color: var(--Neutrals-8, #fcfcfd);
+    /* Body 1 (Bold) */
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  .successful-projects .project .detail-project2 p {
+    color: var(--Neutrals-4, #777e90);
+    width: 93%;
+    /* Caption */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .successful-projects .project .read-more {
+    margin-left: 20px;
+  }
+
+  .featured-funders {
+    width: 90%;
+    margin-left: 0px;
+    padding-right: 0;
+  }
+
+  .featured-funders h2 {
+    text-align: left;
+    padding-left: 40px;
+    line-height: 40px;
+    width: 80%;
+  }
+
+  .featured-funders .frame {
+    padding: 0;
+    width: 100%;
+  }
+
+  .featured-funders .frame .funders {
+    margin-left: 17px;
+  }
+  .featured-funders .frame .funders .funder h3 {
+    margin-top: 10px;
+  }
+
+  .featured-funders .frame .funders .info .content h2 {
+    padding-left: 0;
+  }
+
+  .featured-funders .frame .funders .info .content h3 {
+    padding-left: 0;
+  }
+
+  .featured-funders .frame .funders .time-raise-fund {
+    margin-top: 10px;
+  }
+
+  .featured-funders .frame .funders .time-raise-fund .raise-funder-seed-coin {
+    padding-left: 80px;
+    margin-top: 5px;
+  }
+
+  .featured-funders .frame .funders .funder .coin {
+    margin-left: -36px;
+  }
+
+  .unifund-goals .goals,
+  .funder-project .projects,
+  .featured-funders .funders {
+    margin-left: 0;
+  }
+
+  .unifund-goals h2 {
+    padding-left: 40px;
+  }
+
+  .unifund-intro {
+    padding-left: 10px;
+  }
+
+  .introduce {
+    max-width: 90%;
+  }
+
+  .introduce h2 {
+    margin-top: 517px;
+    margin-left: 40px;
+  }
+
+  .introduce iframe {
+    width: 88%;
+    margin-left: 1px;
+  }
+
+  .project {
+    margin: 0;
+  }
+  .unifund-goals {
+    width: 90%;
+  }
+  .unifund-goals .goals {
+    margin-top: 20px;
+  }
+
+  .unifund-goals .goal{
+    margin-left: 60px;
+  }
+
+  .successful-projects .project .image .background-blur {
+    width: 250px;
+    height: 500px;
+    margin-left: 80px;
+  }
+
+  .successful-projects .project .image img {
+    margin-top: 30px;
+    width: 307px;
+    height: 400px;
+    margin-left: 80px;
+  }
+
+  .main-project {
+    max-width: 80%;
+    margin-left: 30px;
+    margin-top: -100px;
+  }
+
+  .unifund-intro {
+    margin-left: 40px;
+  }
+
+  .unifund-intro .detail-info {
+    display: none;
+  }
+
+  .unifund-intro h2 {
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -0.96px;
+  }
+
+  .unifund-intro p {
+    width: 87%;
+  }
+
+  .unifund-intro .imgfunder {
+    margin-top: 20px;
+  }
+
+  .unifund-intro .imgfunder img {
+    width: 180px;
+  }
+
+  .unifund-intro .imgfunder .Imgfund3 {
+    margin-left: 0;
+  }
+
+  .unifund-intro .imgfunder .Imgfund2 {
+    margin-left: 0;
+  }
+
+  .unifund-intro .imgfunder .Imgfund {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .unifund-intro .imgfunder .Imgfund {
+    width: 220px;
+  }
+
+  .unifund-intro .imgfunder .Imgfund3 {
+    margin-left: 200px;
+  }
+
+  .unifund-intro .imgfunder .Imgfund2 {
+    margin-left: 0px;
+  }
+  .unifund-intro .imgfunder .Imgfund {
+    margin-top: 21px;
+    margin-left: 129px;
+  }
+
+ 
+  
 }
