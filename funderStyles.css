@@ -461,6 +461,7 @@ body {
     grid-template-columns: 1fr;
   }
   .project-select .project-option {
+    margin-left: -10px;
     width: 90%;
   }
   .project-option .project-bg {
